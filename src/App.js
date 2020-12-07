@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import "./App.css";
 
 import Landing from "./Landing/Landing";
 import Site1 from "./Site1/Site1.js";

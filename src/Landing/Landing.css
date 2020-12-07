@@ -1,5 +1,20 @@
 .Landing {
-  background-image: url("/images/garden_entrance_tiny.jpg");
+  background-image: url("https://images.unsplash.com/photo-1571192776145-9f563c1df686?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjZ8fHNlY3JldCUyMGdhcmRlbiUyMGVudHJhbmNlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
   height: 100vh;
-  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blurb {
+  background-color: white;
+  width: 30%;
+  height: 20%;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 20px 70px 4px;
+  padding: 15px;
 }
