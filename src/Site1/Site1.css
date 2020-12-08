@@ -7,7 +7,6 @@
 }
 
 .mutant {
-  padding: 50px;
   width: 10%;
   height: 10%;
   padding: 15px;
@@ -60,6 +59,18 @@
 }
 
 .doorway {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/541339f0e4b06a3d5343bbf3/1415401415998-M6BQEMBIHZ0TFX7GJXPP/ke17ZwdGBToddI8pDm48kB80eW4KK5wgMfkTp6SjTNtZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxkEDnlqEYEiGVDb0kl5jpOJsm5iyfgdjNZyk67t96-U_4JMfIDDY8RGcVnRlrKExA/IMG_0607.JPG?format=750w");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 25%;
+  width: 15%;
+
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+}
+
+/* .doorway {
   background-image: url("https://images.unsplash.com/photo-1504378726307-8ba90b0427b3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=942&q=80");
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,4 +84,4 @@
   position: absolute;
   bottom: 10%;
   right: 15%;
-}
+} */
