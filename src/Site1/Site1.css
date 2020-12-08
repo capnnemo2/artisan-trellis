@@ -2,32 +2,75 @@
   background-image: url("https://www.syfy.com/sites/syfy/files/styles/1200x680/public/2017/11/x_characters.jpg");
   height: 100vh;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.villain {
+.mutant {
   padding: 50px;
   width: 10%;
   height: 10%;
   padding: 15px;
+  cursor: pointer;
 }
 
 .magneto {
   position: absolute;
-  top: 180px;
-  left: 500px;
+  top: 22%;
+  left: 48%;
 }
 
 .juggernaut {
   position: absolute;
-  top: 20px;
-  left: 210px;
+  top: 2%;
+  left: 20%;
 }
 
 .cyclops {
   position: absolute;
-  top: 500px;
-  left: 350px;
+  top: 62%;
+  left: 33%;
+}
+
+.item {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.5;
+}
+
+.item::before,
+.item::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 8px;
+  background-color: black;
+}
+
+.item::before {
+  transform: rotate(45deg);
+}
+
+.item::after {
+  transform: rotate(-45deg);
+}
+
+.doorway {
+  background-image: url("https://images.unsplash.com/photo-1504378726307-8ba90b0427b3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=942&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25%;
+  width: 15%;
+
+  border: 5px solid black;
+  border-radius: 4%;
+  box-shadow: 0 0 10px 10px hsl(0, 0%, 80%), 0 0 10px 15px hsl(0, 0%, 90%);
+
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
 }
