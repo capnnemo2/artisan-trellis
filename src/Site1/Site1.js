@@ -65,7 +65,6 @@ function Site1() {
       ) : (
         ""
       )}
-      {/* <MutantDetails m_name={m_name} m_trait={m_trait} /> */}
       <Link to="/site2">
         <div className="doorway" data-tip="doorway"></div>
         <ReactTooltip place="top" type="dark" effect="solid" />
