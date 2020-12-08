@@ -7,8 +7,6 @@ function Landing() {
     <div className="Landing">
       <div className="blurb">
         <h1>Artisan Trellis</h1>
-        <p>Explore the Artisan Trellis product catalogue.</p>
-        <p>Pardon the dust, construction is ongoing.</p>
         <Link to="/site1">Enter ---&gt;</Link>
       </div>
     </div>
