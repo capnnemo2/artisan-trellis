@@ -5,6 +5,8 @@ import "./App.css";
 import Landing from "./Landing/Landing";
 import Site1 from "./Site1/Site1.js";
 
+// TODO not responsive
+
 function App() {
   return (
     <div className="App">

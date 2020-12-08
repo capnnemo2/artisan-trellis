@@ -4,4 +4,30 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.villain {
+  padding: 50px;
+  width: 10%;
+  height: 10%;
+  padding: 15px;
+}
+
+.magneto {
+  position: absolute;
+  top: 180px;
+  left: 500px;
+}
+
+.juggernaut {
+  position: absolute;
+  top: 20px;
+  left: 210px;
+}
+
+.cyclops {
+  position: absolute;
+  top: 500px;
+  left: 350px;
 }
