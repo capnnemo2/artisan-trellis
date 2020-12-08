@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Site1.css";
 
 import ReactTooltip from "react-tooltip";
@@ -65,6 +66,9 @@ function Site1() {
         ""
       )}
       {/* <MutantDetails m_name={m_name} m_trait={m_trait} /> */}
+      <Link to="/site2">
+        <div className="doorway"></div>
+      </Link>
 
       <ReactTooltip place="top" type="dark" effect="solid" />
     </div>
