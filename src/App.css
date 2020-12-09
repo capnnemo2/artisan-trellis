@@ -69,3 +69,33 @@ nav a:hover {
 }
 
 /* NAV */
+
+/* FOOTER */
+
+.Footer {
+  background-color: rgb(90, 163, 228);
+  width: 100%;
+}
+
+.footer-links {
+  max-width: 1720px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  transition: 0.2s all ease-in-out;
+}
+
+.footer-links a:hover {
+  opacity: 0.5;
+}
+
+/* FOOTER */
