@@ -6,7 +6,6 @@
 
 nav {
   background-color: rgb(90, 163, 228);
-  max-width: 1720px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
