@@ -6,6 +6,7 @@ import ReactTooltip from "react-tooltip";
 import MutantDetails from "../MutantDetails/MutantDetails";
 
 // TODO footer isnt sticky
+// TODO if Noah likes this setup (which I think is better for what I'm able to currently do) then this file should be App.js and the content window would be the switch routes
 
 export default function Site3() {
   const [product, set_product] = useState(false);
