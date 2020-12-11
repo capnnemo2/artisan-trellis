@@ -1,23 +1,24 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
 import "./Window.css";
-import ReactTooltip from "react-tooltip";
+import Scene1 from "../components/Scene1/Scene1";
+import Scene2 from "../components/Scene2/Scene2";
 
-export default function Window({ handleClickProduct, getProductInfo }) {
+export default function Window({ getProductInfo }) {
   return (
     <div className="Window">
       <div className="content-window">
-        <div className="content-window-img">
-          <div
-            className="embedded_product med-g"
-            data-tip="Medium Globe"
-            onClick={(e) => {
-              e.preventDefault();
-              // handleClickProduct("Medium Globe", "MG", "24in x 12in");
-              getProductInfo(1);
-            }}
-          ></div>
-          <ReactTooltip place="top" type="dark" effect="solid" />
-        </div>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            component={() => <Scene1 getProductInfo={getProductInfo} />}
+          />
+          <Route
+            path="/scene2"
+            component={() => <Scene2 getProductInfo={getProductInfo} />}
+          />
+        </Switch>
       </div>
     </div>
   );

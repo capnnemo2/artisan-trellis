@@ -99,6 +99,15 @@ nav a:hover {
 
 /* FOOTER */
 
+/* SHUFFLE */
+
+.Shuffle {
+  padding: 5px;
+  margin: 5px;
+}
+
+/* SHUFFLE */
+
 /* GRID */
 
 .App {
@@ -106,9 +115,9 @@ nav a:hover {
   display: grid;
   grid-template-areas:
     "header header header"
-    "details window alt"
+    "details window shuffle"
     "footer footer footer";
-  grid-template-columns: 150px auto 150px;
+  grid-template-columns: 200px auto 200px;
   grid-template-rows: auto 1fr auto;
   grid-gap: 10px;
 }
@@ -124,6 +133,10 @@ nav a:hover {
 .Window {
   grid-area: window;
   height: 100%;
+}
+
+.Shuffle {
+  grid-area: shuffle;
 }
 
 /* TODO the footer is NOT sticking to the bottom. need to get better with grid to be able to stick that sucker to the bottom where it belongs */

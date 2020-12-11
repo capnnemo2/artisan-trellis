@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Details from "./Details/Details";
 import Window from "./Window/Window";
+import Shuffle from "./components/Shuffle";
 import products from "./dummy_store";
 
 // TODO footer isn't stickign to bottom properly
@@ -34,8 +35,6 @@ function App() {
     if (selected_product.name !== product_details.p_name) {
       const product_alts = getProductAlts(selected_product.id);
 
-      console.log(product_alts);
-
       set_product_details((prevState) => ({
         ...prevState,
         p_name: selected_product.name,
@@ -45,8 +44,19 @@ function App() {
       }));
       set_product(true);
     } else if (selected_product.name === product_details.p_name) {
-      set_product((product) => !product);
+      clearProductDetails();
     }
+  }
+
+  function clearProductDetails() {
+    set_product((product) => !product);
+    set_product_details((prevState) => ({
+      ...prevState,
+      p_name: "",
+      p_code: "",
+      p_dimensions: "",
+      p_alts: [],
+    }));
   }
 
   return (
@@ -65,6 +75,7 @@ function App() {
         ""
       )}
       <Window getProductInfo={getProductInfo} />
+      <Shuffle clearProductDetails={clearProductDetails} />
       <Footer />
     </div>
   );

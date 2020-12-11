@@ -1,3 +1,9 @@
+.Details {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
 .p-details-name {
   font-size: 1.5em;
   font-weight: bold;
@@ -5,8 +11,9 @@
 
 .p-details-name,
 .p-details-dimensions,
-.p-details-code {
-  padding: 10px;
+.p-details-code,
+.alt-prods {
+  padding-top: 10px;
 }
 
 .alt-prods ul {

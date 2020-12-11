@@ -5,8 +5,8 @@ import "./Details.css";
 
 function Details({ p_name, p_code, p_dimensions, p_alts }) {
   return (
-    <div>
-      <div className="Details">
+    <div className="Details">
+      <div>
         <p className="p-details-name">{p_name}</p>
         <p className="p-details-dimensions">Product Code: {p_code}</p>
         <p className="p-details-code">Dimensions: {p_dimensions}</p>
