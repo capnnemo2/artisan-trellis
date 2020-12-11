@@ -7,7 +7,7 @@ export default function Scene1({ getProductInfo }) {
     <div className="Scene1">
       <div className="scene1-img">
         <div
-          className="med-g"
+          className="item med-g"
           data-tip="Medium Globe"
           onClick={(e) => {
             e.preventDefault();
