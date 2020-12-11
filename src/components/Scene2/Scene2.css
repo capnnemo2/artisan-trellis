@@ -1,0 +1,30 @@
+.scene2-img {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/541339f0e4b06a3d5343bbf3/1428353004786-PKPH9VOTL5QICWPPCEUW/ke17ZwdGBToddI8pDm48kCX-V5vw-8h9IBXN10-_8XN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p4Wyba38KfG317vYluk45_zZdtnDCZTLKcP2mivxmYi50xvY5saIGKMgOza9mH4XA/Globe_Pic.jpg?format=1000w");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 700px;
+  max-width: 1200px;
+  min-width: 1100px;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.small-g {
+  position: absolute;
+  top: 62%;
+  right: 38.5%;
+
+  /* background-color: black;
+  opacity: 0.5; */
+}
+
+/* .embedded_product {
+    width: 20%;
+    height: 30%;
+    padding: 15px;
+    cursor: pointer;
+    background-color: black;
+  }
+   */
