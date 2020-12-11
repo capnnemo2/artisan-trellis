@@ -14,6 +14,7 @@ function App() {
     p_name: "",
     p_code: "",
     p_dimensions: "",
+    p_alts: [],
   });
 
   function getProductInfo(product_id) {
@@ -21,13 +22,26 @@ function App() {
     displayProductInfo(selected_product);
   }
 
+  function getProductAlts(id) {
+    const product = products.find((p) => p.id === id);
+    const product_alts = products.filter(
+      (p) => p.type === product.type && p.id !== id
+    );
+    return product_alts;
+  }
+
   function displayProductInfo(selected_product) {
     if (selected_product.name !== product_details.p_name) {
+      const product_alts = getProductAlts(selected_product.id);
+
+      console.log(product_alts);
+
       set_product_details((prevState) => ({
         ...prevState,
         p_name: selected_product.name,
         p_code: selected_product.code,
         p_dimensions: selected_product.dimensions,
+        p_alts: product_alts,
       }));
       set_product(true);
     } else if (selected_product.name === product_details.p_name) {
@@ -44,6 +58,7 @@ function App() {
             p_name={product_details.p_name}
             p_code={product_details.p_code}
             p_dimensions={product_details.p_dimensions}
+            p_alts={product_details.p_alts}
           />
         </div>
       ) : (

@@ -8,3 +8,7 @@
 .p-details-code {
   padding: 10px;
 }
+
+.alt-prods ul {
+  list-style-type: none;
+}
