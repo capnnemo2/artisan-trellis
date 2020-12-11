@@ -5,15 +5,13 @@ function Details({ p_name, p_code, p_dimensions }) {
   return (
     <div>
       <div className="Details">
-        <p>{p_name}</p>
-        <p>Dimensions: {p_code}</p>
-        <p>Product Code: {p_dimensions}</p>
+        <p className="p-details-name">{p_name}</p>
+        <p className="p-details-dimensions">Dimensions: {p_code}</p>
+        <p className="p-details-code">Product Code: {p_dimensions}</p>
       </div>
       <div className="alt-prods">
+        <p>Similar Products</p>
         <ul>
-          <li>
-            <i>Similar products</i>
-          </li>
           <li>sg</li>
           <li>lg</li>
         </ul>

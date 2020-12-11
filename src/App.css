@@ -98,3 +98,37 @@ nav a:hover {
 }
 
 /* FOOTER */
+
+/* GRID */
+
+.App {
+  min-height: 100%;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "details window alt"
+    "footer footer footer";
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+}
+
+.Nav {
+  grid-area: header;
+}
+
+.Details {
+  grid-area: details;
+}
+
+.Window {
+  grid-area: window;
+  height: 100%;
+}
+
+/* TODO the footer is NOT sticking to the bottom. need to get better with grid to be able to stick that sucker to the bottom where it belongs */
+.Footer {
+  grid-area: footer;
+}
+
+/* GRID */

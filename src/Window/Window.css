@@ -1,35 +1,3 @@
-.Window {
-  min-height: 100%;
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "details window prod-nav"
-    "footer footer footer";
-  grid-template-columns: 150px auto 150px;
-  grid-template-rows: auto 1fr auto;
-  grid-gap: 10px;
-}
-
-.Nav {
-  grid-area: header;
-}
-
-.content-details {
-  grid-area: details;
-}
-
-.product-nav {
-  grid-area: prod-nav;
-}
-
-.content-window {
-  grid-area: window;
-  height: 100%;
-}
-/* TODO the sizing of the content-window is not working */
-/* I think the images just need to be pre-sized in a uniform manner? */
-
-/* TODO the footer is NOT sticking to the bottom. need to get better with grid to be able to stick that sucker to the bottom where it belongs */
 .content-window-img {
   height: 700px;
   background-image: url("https://images.squarespace-cdn.com/content/v1/541339f0e4b06a3d5343bbf3/1428353006596-QRK05O1KT319Y13M4J8C/ke17ZwdGBToddI8pDm48kCX-V5vw-8h9IBXN10-_8XN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p4Wyba38KfG317vYluk45_zZdtnDCZTLKcP2mivxmYi50xvY5saIGKMgOza9mH4XA/Globe_Pic+%282%29.jpg?format=2500w");
@@ -39,14 +7,12 @@
   position: relative;
 }
 
+/* TODO need to figure out how to get this to stay attached to where the product is located within the background even if the window is resized */
+/* the solution to that might be to make the size of the image static until specific breakpoints/media queries */
 .med-g {
   position: absolute;
   top: 42%;
   right: 25%;
-}
-
-.Footer {
-  grid-area: footer;
 }
 
 .embedded_product {
@@ -54,4 +20,5 @@
   height: 30%;
   padding: 15px;
   cursor: pointer;
+  /* background-color: white; */
 }
