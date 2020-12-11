@@ -1,21 +1,22 @@
 import React from "react";
 import "./Details.css";
 
-function Details({ p_name, p_code, p_dimensions }) {
+// TODO add an onclick handler to the alt products -> highlights selected alt anddisplays alt name and dimensions below
+
+function Details({ p_name, p_code, p_dimensions, p_alts }) {
   return (
-    <div>
-      <div className="Details">
-        <p>{p_name}</p>
-        <p>Dimensions: {p_code}</p>
-        <p>Product Code: {p_dimensions}</p>
+    <div className="Details">
+      <div>
+        <p className="p-details-name">{p_name}</p>
+        <p className="p-details-dimensions">Product Code: {p_code}</p>
+        <p className="p-details-code">Dimensions: {p_dimensions}</p>
       </div>
       <div className="alt-prods">
+        <p>Similar Products</p>
         <ul>
-          <li>
-            <i>Similar products</i>
-          </li>
-          <li>sg</li>
-          <li>lg</li>
+          {p_alts.map((p, i) => (
+            <li key={i}>{p.code}</li>
+          ))}
         </ul>
       </div>
     </div>
