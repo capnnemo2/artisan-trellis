@@ -1,13 +1,13 @@
 import React from "react";
-import "./MutantDetails.css";
+import "./Details.css";
 
-function MutantDetails({ m_name, m_trait, m_team }) {
+function Details({ p_name, p_code, p_dimensions }) {
   return (
     <div>
-      <div className="MutantDetails">
-        <p>{m_name}</p>
-        <p>Dimensions: {m_team}</p>
-        <p>Product Code: {m_trait}</p>
+      <div className="Details">
+        <p>{p_name}</p>
+        <p>Dimensions: {p_code}</p>
+        <p>Product Code: {p_dimensions}</p>
       </div>
       <div className="alt-prods">
         <ul>
@@ -22,4 +22,4 @@ function MutantDetails({ m_name, m_trait, m_team }) {
   );
 }
 
-export default MutantDetails;
+export default Details;

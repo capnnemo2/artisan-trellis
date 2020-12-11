@@ -1,4 +1,4 @@
-.Site3 {
+.Window {
   min-height: 100%;
   display: grid;
   grid-template-areas:
@@ -47,4 +47,11 @@
 
 .Footer {
   grid-area: footer;
+}
+
+.embedded_product {
+  width: 20%;
+  height: 30%;
+  padding: 15px;
+  cursor: pointer;
 }

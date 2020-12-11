@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Site1.css";
 
 import ReactTooltip from "react-tooltip";
-import MutantDetails from "../MutantDetails/MutantDetails";
+import Details from "../Details/Details";
 
 function Site1() {
   const [mutant_details, set_mutant_details] = useState(false);
@@ -56,7 +56,7 @@ function Site1() {
       ></div>
       {mutant_details ? (
         <div className="mutant_details">
-          <MutantDetails
+          <Details
             m_name={mutant.m_name}
             m_trait={mutant.m_trait}
             m_team={mutant.m_team}

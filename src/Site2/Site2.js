@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Site2.css";
 
 import ReactTooltip from "react-tooltip";
-import MutantDetails from "../MutantDetails/MutantDetails";
+import Details from "../Details/Details";
 
 function Site2() {
   const [product, set_product] = useState(false);
@@ -54,7 +54,7 @@ function Site2() {
       ></div>
       {product ? (
         <div className="mutant_details">
-          <MutantDetails
+          <Details
             m_name={product_details.p_name}
             m_trait={product_details.p_code}
             m_team={product_details.p_dimensions}
