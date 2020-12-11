@@ -49,7 +49,7 @@ function App() {
   }
 
   function clearProductDetails() {
-    set_product((product) => !product);
+    set_product(false);
     set_product_details((prevState) => ({
       ...prevState,
       p_name: "",

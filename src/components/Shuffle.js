@@ -6,21 +6,21 @@ export default function Shuffle({ clearProductDetails }) {
 
   const location = useLocation();
 
-  const all_scenes = ["/", "/scene2"];
-
-  function getRandomScene(all_scenes) {
-    const all_other_scenes = all_scenes.filter(
-      (scene) => scene !== location.pathname
-    );
-    const max = all_other_scenes.length;
-    const random_selection = Math.floor(Math.random() * Math.floor(max));
-
-    return all_other_scenes[random_selection];
-  }
-
   useEffect(() => {
-    set_random(getRandomScene(all_scenes));
-  }, [all_scenes]);
+    function getRandomScene() {
+      const all_scenes = ["/", "/scene2"];
+
+      const all_other_scenes = all_scenes.filter(
+        (scene) => scene !== location.pathname
+      );
+      const max = all_other_scenes.length;
+      const random_selection = Math.floor(Math.random() * Math.floor(max));
+
+      return all_other_scenes[random_selection];
+    }
+
+    set_random(getRandomScene);
+  }, [location.pathname]);
 
   return (
     <div className="Shuffle">
